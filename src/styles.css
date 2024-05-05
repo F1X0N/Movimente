@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 
 * {
@@ -9,8 +13,4 @@
 
 body {
     background-image: linear-gradient(to bottom, #E6E6E6 0%, #E6E6E6 100%);
-}
-
-:root {
-    font-size: 62.50%;
 }

@@ -1,23 +1,67 @@
-<section class="masterMain">
-    <h2>Crie uma mudança saudável através do corpo, mente e espírito</h2>
-    <section class="percentArea">
-        <app-percent-card class="percentCard" [percent]="'20%'" [distac]="'Menos estresse'" [title]="'em alunos que praticam regularmente as aulas'" />
-        <app-percent-card class="percentCard" [percent]="'20%'" [distac]="'Menos estresse'" [title]="'em alunos que praticam regularmente as aulas'" />
-        <app-percent-card class="percentCard" [percent]="'20%'" [distac]="'Menos estresse'" [title]="'em alunos que praticam regularmente as aulas'" />
+<main>
+    <section class="mb-8">
+        <div class="flex justify-center">
+            <h2 class="text-base text-center text-yellow-600 font-semibold mb-2">Crie uma mudança saudável através do
+                corpo, mente e espírito</h2>
+        </div>
+
+        <section class="grid grid-cols-12 mx-0 px-2 sm:gap-2">
+            <app-percent-card class="col-span-12 sm:col-span-6" [percent]="'15%'" [title]="'De desconto'"
+                [description]="'em nossos planos semestrais'" />
+            <app-percent-card class="col-span-12 sm:col-span-6" [percent]="'20%'" [title]="'De desconto'"
+                [description]="'em nossos planos anuais'" />
+        </section>        
+
+        <div class="flex justify-center">
+            <a href="#"
+                class="inline-block px-8 py-2 leading-none border rounded text-yellow-600 border-yellow-600 hover:border-transparent hover:text-white hover:bg-yellow-600 hover:text-white">Veja
+                os benefícios</a>
+        </div>
     </section>
-    <button>Agendar avaliação</button>
-    <h2>Conheça nossos planos</h2>
-    <h5>Planos que cabem no seu bolso</h5>
-    <section class="percentArea">
-        <app-payment-card class="percentCard" [plan]="'Plano básico'" [price]="'R$ 150,00'" [offer]="'3 aulas por semana'"/>
-        <app-payment-card class="percentCard" [plan]="'Plano avançado'" [price]="'R$ 250,00'" [offer]="'5 aulas por semana'"/>
-        <app-payment-card class="percentCard" [plan]="'Plano turbinado'" [price]="'R$ 300,00'" [offer]="'7 aulas por semana'"/>
+
+    <section class="mb-8">
+        <div class="flex justify-center">
+            <h2 class="text-base text-center text-yellow-600 font-semibold mb-4">Conheça nossos planos</h2>
+        </div>
+
+        <div class="flex justify-center">
+            <h6 class="text-xs text-center text-yellow-600 font-semibold mt-4 mb-1">2 aulas por semana</h6>
+        </div>
+
+        <section class="grid grid-cols-12 mx-0 px-2 sm:gap-2">
+            <app-plan-card class="col-span-12 sm:col-span-6" [plan]="'Plano básico'" [price]="'R$ 150,00'"
+                [lesson]="'2 aulas por semana'" />
+            <app-plan-card class="col-span-12 sm:col-span-6" [plan]="'Plano semestral'" [price]="'R$ 765,00'"
+                [lesson]="'2 aulas por semana'" />
+            <app-plan-card class="col-span-12 sm:col-span-12" [plan]="'Plano anual'" [price]="'R$ 1.140,00'"
+                [lesson]="'2 aulas por semana'" />
+        </section>
+
+        <div class="flex justify-center">
+            <h6 class="text-xs text-center text-yellow-600 font-semibold mt-4 mb-1">3 aulas por semana</h6>
+        </div>
+
+        <section class="grid grid-cols-12 mx-0 px-2 sm:gap-2">
+            <app-plan-card class="col-span-12 sm:col-span-6" [plan]="'Plano básico'" [price]="'R$ 180,00'"
+                [lesson]="'3 aulas por semana'" />
+            <app-plan-card class="col-span-12 sm:col-span-6" [plan]="'Plano semestral'" [price]="'R$ 918,00'"
+                [lesson]="'3 aulas por semana'" />
+            <app-plan-card class="col-span-12 sm:col-span-12" [plan]="'Plano anual'" [price]="'R$ 1.728,00'"
+                [lesson]="'3 aulas por semana'" />
+        </section>
+
     </section>
-    <h2>O que dizem nossos alunos</h2>
-    <h5>O pilates inclui todos, temos alunos de todos os gêneros e idades</h5>
-    <section class="percentArea">
-        <app-article class="percentCard" [article]="'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magnam!'" [author]="'Juliana'"/>
-        <app-article class="percentCard" [article]="'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magnam!'" [author]="'Marcos'"/>
-        <app-article class="percentCard" [article]="'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magnam!'" [author]="'Fernanda'"/>
+
+    <section class="mb-8">
+        <div class="flex justify-center">
+            <h2 class="text-base text-center text-yellow-600 font-semibold mb-4">Depoimentos reais</h2>
+        </div>
+
+        <section class="grid grid-cols-12 mx-0 px-2 sm:gap-2">
+            <app-depoimentos class="col-span-12 sm:col-span-4" [name]="'Lene'" [testimony]="'Estou me sentindo muito melhor depois que entrei no pilates!'" [improvement]="'Qualidade de vida'"/>
+            <app-depoimentos class="col-span-12 sm:col-span-4" [name]="'Cristiane'" [testimony]="'Minhas dores nas costas melhoraram bastante, já consigo trabalhar sem dores'" [improvement]="'Dores Musculares'"/>
+            <app-depoimentos class="col-span-12 sm:col-span-4" [name]="'João'" [testimony]="'Meu desempenho nas corridas melhoraram muito!'" [improvement]="'Desempenho Físico'"/>
+        </section>
+
     </section>
-</section>
+</main>
