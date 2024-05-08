@@ -15,21 +15,21 @@
         </div>
         <div [class]="{'hidden': !showMenu}" class="absolute left-0 top-8 p-2 bg-yellow-600 w-full block flex-grow lg:static lg:bg-transparent lg:flex lg:items-center lg:w-auto">
             <div class="text-sm lg:flex-grow">
-                <a href="#responsive-header"
+                <a href="#"
                     class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
                     Início
                 </a>
-                <a href="#responsive-header"
+                <a href="#"
                     class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
                     Galeria
                 </a>
-                <a href="#responsive-header"
+                <a href="#"
                     class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
                     Sobre
                 </a>
             </div>
             <div>
-                <a href="#"
+                <a [href]="'https://wa.me/+5575988443663?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20estúdio.'"
                     class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-yellow-500 hover:bg-white mt-4 lg:mt-0 lg:border-yellow-600 text-yellow-600">Converse
                     conosco</a>
             </div>
@@ -38,6 +38,6 @@
     <main class="container mx-3 w-3/4">
         <h2 class="text-xl text-yellow-600 font-bold mb-2">Transformando vidas através do movimento</h2>
         <h5 class="text-xs text-yellow-600 font-medium mb-8">Hábitos incorretos são responsáveis pela maioria das doenças, se não por todas elas</h5>
-        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white bg-yellow-600 border-yellow-600 hover:bg-transparent hover:text-yellow-600 hover:border-yellow-600 mt-4 lg:mt-0">Agendar avaliação</a>
+        <a [href]="'https://wa.me/+5575988443663?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20estúdio.'" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white bg-yellow-600 border-yellow-600 hover:bg-transparent hover:text-yellow-600 hover:border-yellow-600 mt-4 lg:mt-0">Agendar avaliação</a>
     </main>
 </header>
